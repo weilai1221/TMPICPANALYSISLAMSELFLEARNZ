@@ -191,7 +191,7 @@ Above execution flows have been automated in the provided scripts. For detailed 
 
 - **submodules/diff-gaussian-rasterization**:
     - Description: This is a CUDA-accelerated rasterization system for 3D Gaussians. It provides the core rendering capability of projecting 3D Gaussians to 2D images with proper blending and depth handling.
-    - Note: The Python code interfaces with C++/CUDA code through a PyTorch extension for performance: ```setup.py:17-33```. For the detail of cuda implementation, please refer to the ```submodules/diff-gaussian-rasterization/rasterize_points.cu```, ```submodules/diff-gaussian-rasterization/cuda_rasterizer``` directory and other related files.
+    - Note: The Python code interfaces with C++/CUDA code through a PyTorch extension for performance: ```setup.py:17-33```. For the detail of python and cuda implementation, please refer to the ```submodules/diff-gaussian-rasterization/diff-gaussian-rasterization/__init__.py```, ```submodules/diff-gaussian-rasterization/rasterize_points.cu```, directory ```submodules/diff-gaussian-rasterization/cuda_rasterizer```  and other related files.
     - Usage(Import) in the Project:
         - gaussian_renderer/__init__.py (imported as ```diff_gaussian_rasterization```) ```__init__.py:14```
         - mp_Tracker.py ```mp_Tracker.py:16```
