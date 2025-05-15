@@ -166,7 +166,6 @@ Above execution flows have been automated in the provided scripts. For detailed 
         - Sharing new point data with the Mapper
     - Usage(Import) in the Project: 
         - gs_icp_slam.py ```gs_icp_slam.py:16```
-        - gs_icp_slam_unlimit.py ```gs_icp_slam_unlimit.py:16```
 
 - **mp_Tracker_unlimit.py**:
     - Description: This is a variant of the tracker that removes performance throttling. It functions almost identically to mp_Tracker.py but eliminates the framerate limiting code, allowing the system to run at maximum speed.
@@ -194,8 +193,6 @@ Above execution flows have been automated in the provided scripts. For detailed 
     - Note: The Python code interfaces with C++/CUDA code through a PyTorch extension for performance: ```setup.py:17-33```. For the detail of python and cuda implementation, please refer to the ```submodules/diff-gaussian-rasterization/diff-gaussian-rasterization/__init__.py```, ```submodules/diff-gaussian-rasterization/rasterize_points.cu```, directory ```submodules/diff-gaussian-rasterization/cuda_rasterizer```  and other related files.
     - Usage(Import) in the Project:
         - gaussian_renderer/__init__.py (imported as ```diff_gaussian_rasterization```) ```__init__.py:14```
-        - mp_Tracker.py ```mp_Tracker.py:16```
-        - mp_Tracker_unlimit.py ```mp_Tracker_unlimit.py:17```
 
 - **submodules/fast_gicp**:
     - Description: This module implements Fast Generalized Iterative Closest Point algorithm, which is a variant of ICP that incorporates covariance information for more robust point cloud alignment.
